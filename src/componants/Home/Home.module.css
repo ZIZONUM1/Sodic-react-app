@@ -1,0 +1,86 @@
+.HeaderSec{
+
+background-image: url('../../img\(sodic\)/img158.jpg');
+background-size: 100% 100%;
+background-repeat: no-repeat;
+background-position: center;
+height: 100vh;
+
+}
+
+
+.layer {
+  position: absolute;
+height: 100vh;
+width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* شفافية */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+  margin: 0;
+}
+
+
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+/* From Uiverse.io by AlimurtuzaCodes */ 
+.btn {
+
+  border: none;
+  width: 12em;
+  height: 4em;
+  border-radius: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: #1C1A1C;
+  cursor: pointer;
+  transition: all 450ms ease-in-out;
+  text-decoration: none !important;
+}
+
+.sparkle {
+  fill: #AAAAAA;
+  transition: all 800ms ease;
+}
+
+.text {
+  text-decoration: none !important;
+  font-weight: 600;
+  color: #AAAAAA;
+  font-size: medium;
+}
+a{
+  text-decoration: none !important;
+}
+
+.btn:hover {
+  background: linear-gradient(0deg,#6693e6,#0089B4);
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
+  inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
+  0px 0px 0px 4px rgba(255, 255, 255, 0.2),
+  0px 0px 180px 0px #0089B4;
+  transform: translateY(-2px);
+}
+
+.btn:hover .text {
+  color: white;
+}
+
+.btn:hover .sparkle {
+  fill: white;
+  transform: scale(1.2);
+} 
+/* From Uiverse.io by AlimurtuzaCodes */ 

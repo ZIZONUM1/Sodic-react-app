@@ -1,25 +1,50 @@
-import logo from './logo.svg';
+import React, { useState, useEffect } from 'react';
 import './App.css';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+
+import Navbar from './componants/Navbar/Navbar';
+import Layout from './componants/Navbar/Layout/Layout';
+import Home from './componants/Home/Home';
+import Notfound from './componants/NotFound/NotFound';
+import Contactus from './componants/ContactUs/Contactus';
+import Aboutus from './componants/Aboutus/Aboutus';
+import Loadingscreen from './componants/Loadingscreen/Loadingscreen';
+import ItemDetails from './componants/ItemDetails/ItemDetails';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate loading duration (can be replaced with real data fetching logic)
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1000); // 1.5 seconds
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  const router = createBrowserRouter([
+    {
+      path: "",
+      element: <Layout />,
+      children: [
+        { path: "", element: <Home /> },
+        { path: "home", element: <Home /> },
+        { path: "contactus", element: <Contactus /> },
+        { path: "aboutus", element: <Aboutus /> },
+        { path: "loadingscreen", element: <Loadingscreen /> },
+        { path: "itemdetails", element: <ItemDetails /> },
+        { path: "*", element: <Notfound /> },
+      ],
+    },
+  ]);
+
+  // Render the loading screen before the router loads
+  if (loading) {
+    return <Loadingscreen />;
+  }
+
+  return <RouterProvider router={router} />;
 }
 
 export default App;
