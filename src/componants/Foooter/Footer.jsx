@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-
+import './mediaQ.css'
 export default function Footer() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: false, margin: '0px 0px -100px 0px' });

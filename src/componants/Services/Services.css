@@ -6,7 +6,7 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   width: fit-content;
   color: #dee3e4;
-  
+
 }
 
 .Servh2::before {
@@ -70,3 +70,44 @@ figcaption h2 {
 .figP:hover {
   color: #ff0000; 
 }
+@media (max-width: 576px) {
+  .Servh2 {
+    
+  
+  font-size: 4rem;
+ 
+
+}
+.Servh2::before {
+ 
+  font-size: 1rem;
+ 
+}
+}
+
+/* التابلت أو الشاشات المتوسطة */
+@media (min-width: 577px) and (max-width: 991px) {
+  .Servh2 {
+    
+  position: relative;
+  margin: 100px auto 0px;
+  font-size:6rem;
+  
+
+}
+.Servh2::before {
+  content: "Know Me More";
+  color: black;
+  font-size: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: absolute;
+  top: 65%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+}
+
+/* الشاشات الكبيرة (ديسكتوب) */
+
+

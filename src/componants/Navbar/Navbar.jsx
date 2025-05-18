@@ -23,7 +23,7 @@ export default function Navbar() {
       <style>
         {`
           .navbar {
-            transition: all 0.5s ease-in-out; /* Smooth transition for all changes */
+            transition: all 1s ease-in-out; /* Smooth transition for all changes */
           }
           .bg-body-white {
             background-color: #ffffff; /* White background */

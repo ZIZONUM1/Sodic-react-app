@@ -12,7 +12,7 @@ export default function Aboutus() {
 
     const overlayTimer = setTimeout(() => {
       setShowOverlay(true);
-    }, 2000); // بعد حركة العنوان بـ 1 ثانية
+    }, 2000);
 
     return () => {
       clearTimeout(titleTimer);
@@ -32,7 +32,9 @@ export default function Aboutus() {
 
       {showOverlay && (
         <div className="overlay">
-          <p className="overlay-text">Welcome to our company. We are committed to excellence and innovation.</p>
+          <p className="overlay-text">
+            Welcome to our company. We are committed to excellence and innovation.
+          </p>
         </div>
       )}
     </div>
