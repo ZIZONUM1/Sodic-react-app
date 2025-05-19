@@ -6,13 +6,14 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      // تغيير لون الـ Navbar عند التمرير لأكثر من 600 بكسل
+      
       if (window.scrollY > 600) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
       }
     };
+    //Edit
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -85,9 +86,10 @@ export default function Navbar() {
                   Contact Us
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/aboutus">
-                  About Us
+             
+               <li className="nav-item">
+                <Link className="nav-link active" aria-current="page" to="/aboutus">
+                    About Us
                 </Link>
               </li>
             </ul>
