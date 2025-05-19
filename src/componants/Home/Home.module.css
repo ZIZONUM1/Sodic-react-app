@@ -5,6 +5,7 @@
   background-position: center;
   height: 100vh; /* Full viewport height by default */
   position: relative; /* Ensure layer positions correctly */
+   overflow-x: hidden;
 }
 
 .layer {

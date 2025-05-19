@@ -24,6 +24,7 @@
 .item {
   position: relative;
   overflow: hidden;
+  
 }
 
 .LayerSrv {
@@ -39,6 +40,7 @@
   justify-content: center;
   align-items: center;
   color: white;
+overflow: hidden;
 }
 
 .LayerSrv p {

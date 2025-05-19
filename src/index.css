@@ -1,4 +1,8 @@
-nav{
+html, body {
+  overflow-x: hidden;
+ 
 
-  background-color: white !important;
+}
+* {
+  outline: 1px solid red;
 }

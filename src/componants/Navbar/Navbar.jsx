@@ -1,56 +1,62 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
+import Collapse from 'bootstrap/js/dist/collapse'; // ⬅️ مهم لإغلاق الناف
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const collapseRef = useRef(null); // ⬅️ مرجع للعنصر اللي هنقفل منه الناف
 
   useEffect(() => {
     const handleScroll = () => {
-      
       if (window.scrollY > 600) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
       }
     };
-    //Edit
-
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const handleLinkClick = () => {
+    if (collapseRef.current) {
+      const bsCollapse = Collapse.getInstance(collapseRef.current) || new Collapse(collapseRef.current, { toggle: false });
+      bsCollapse.hide(); // ⬅️ يقفل القائمة بعد الضغط على لينك
+    }
+  };
 
   return (
     <>
       <style>
         {`
           .navbar {
-            transition: all 1s ease-in-out; /* Smooth transition for all changes */
+            transition: all 1s ease-in-out;
           }
           .bg-body-white {
-            background-color: #ffffff; /* White background */
-            animation: fadeToWhite 1s ease-in-out; /* Animation when switching to white */
+            background-color: #ffffff;
+            animation: fadeToWhite 1s ease-in-out;
           }
           .navbar-dark {
-            background-color: #212529; /* Dark background */
-            animation: fadeToDark 1s ease-in-out; /* Animation when switching to dark */
+            background-color: #212529;
+            animation: fadeToDark 1s ease-in-out;
           }
           @keyframes fadeToWhite {
             from {
-              background-color: #212529; /* Start from dark */
-              opacity: 0.7; /* Slight fade effect */
+              background-color: #212529;
+              opacity: 0.7;
             }
             to {
-              background-color: #ffffff; /* End at white */
+              background-color: #ffffff;
               opacity: 1;
             }
           }
           @keyframes fadeToDark {
             from {
-              background-color: #ffffff; /* Start from white */
-              opacity: 0.7; /* Slight fade effect */
+              background-color: #ffffff;
+              opacity: 0.7;
             }
             to {
-              background-color: #212529; /* End at dark */
+              background-color: #212529;
               opacity: 1;
             }
           }
@@ -59,7 +65,7 @@ export default function Navbar() {
       <nav className={`navbar navbar-expand-lg fixed-top ${isScrolled ? 'bg-dark navbar-dark' : 'bg-body-white'}`}>
         <div className="container-fluid">
           <Link className="navbar-brand" to="/home">
-            <img style={{ width: '130px' }} src={require('../../img(sodic)/SODIC_Logo_Teal_RGB.png')} alt="SodicLogo" />
+            <img style={{ width: '100px', maxWidth: '100%', height: 'auto' }} src={require('../../img(sodic)/SODIC_Logo_Teal_RGB.png')} alt="SodicLogo" />
           </Link>
           <button
             className="navbar-toggler"
@@ -72,24 +78,23 @@ export default function Navbar() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <div className="collapse navbar-collapse" id="navbarSupportedContent" ref={collapseRef}>
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/home">
+                <Link className="nav-link active" aria-current="page" to="/home" onClick={handleLinkClick}>
                   Home
                 </Link>
               </li>
             </ul>
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/contactus">
+                <Link className="nav-link active" aria-current="page" to="/contactus" onClick={handleLinkClick}>
                   Contact Us
                 </Link>
               </li>
-             
-               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/aboutus">
-                    About Us
+              <li className="nav-item">
+                <Link className="nav-link active" aria-current="page" to="/aboutus" onClick={handleLinkClick}>
+                  About Us
                 </Link>
               </li>
             </ul>
