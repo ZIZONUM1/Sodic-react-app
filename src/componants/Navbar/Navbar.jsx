@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import Collapse from 'bootstrap/js/dist/collapse'; // ⬅️ مهم لإغلاق الناف
+import Collapse from 'bootstrap/js/dist/collapse';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
-  const collapseRef = useRef(null); // ⬅️ مرجع للعنصر اللي هنقفل منه الناف
+  const collapseRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,8 +20,8 @@ export default function Navbar() {
 
   const handleLinkClick = () => {
     if (collapseRef.current) {
-      const bsCollapse = Collapse.getInstance(collapseRef.current) || new Collapse(collapseRef.current, { toggle: false });
-      bsCollapse.hide(); // ⬅️ يقفل القائمة بعد الضغط على لينك
+      const bsCollapse = Collapse.getOrCreateInstance(collapseRef.current);
+      bsCollapse.hide(); // إغلاق القائمة بعد الضغط على رابط
     }
   };
 
@@ -65,7 +65,11 @@ export default function Navbar() {
       <nav className={`navbar navbar-expand-lg fixed-top ${isScrolled ? 'bg-dark navbar-dark' : 'bg-body-white'}`}>
         <div className="container-fluid">
           <Link className="navbar-brand" to="/home">
-            <img style={{ width: '100px', maxWidth: '100%', height: 'auto' }} src={require('../../img(sodic)/SODIC_Logo_Teal_RGB.png')} alt="SodicLogo" />
+            <img
+              style={{ width: '100px', maxWidth: '100%', height: 'auto' }}
+              src={require('../../img(sodic)/SODIC_Logo_Teal_RGB.png')}
+              alt="SodicLogo"
+            />
           </Link>
           <button
             className="navbar-toggler"
@@ -81,19 +85,19 @@ export default function Navbar() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent" ref={collapseRef}>
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/home" onClick={handleLinkClick}>
+                <Link className="nav-link active" to="/home" onClick={handleLinkClick}>
                   Home
                 </Link>
               </li>
             </ul>
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/contactus" onClick={handleLinkClick}>
+                <Link className="nav-link active" to="/contactus" onClick={handleLinkClick}>
                   Contact Us
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/aboutus" onClick={handleLinkClick}>
+                <Link className="nav-link active" to="/aboutus" onClick={handleLinkClick}>
                   About Us
                 </Link>
               </li>
