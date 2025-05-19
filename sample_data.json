@@ -1,0 +1,39 @@
+[
+    {
+        "id": 0,
+        "description": "VYE SOL",
+        "images": [
+            "mountain_sunrise_1.jpg",
+            "mountain_sunrise_2.jpg",
+            "mountain_sunrise_3.jpg"
+        ]
+    },
+    {
+        "id": 1,
+        "description": "Ogami",
+        "images": [
+            "city_night_1.jpg",
+            "city_night_2.jpg"
+        ]
+    },
+    {
+        "id": 2,
+        "description": "Sodic-Karmell",
+        "images": [
+            "beach_1.jpg",
+            "beach_2.jpg",
+            "beach_3.jpg",
+            "beach_4.jpg"
+        ]
+    },
+      {
+        "id": 3,
+        "description": "Sodic-Karmell2",
+        "images": [
+            "beach_1.jpg",
+            "beach_2.jpg",
+            "beach_3.jpg",
+            "beach_4.jpg"
+        ]
+    }
+]
