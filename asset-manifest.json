@@ -1,15 +1,22 @@
 {
   "files": {
-    "main.css": "/Sodic-react-app/static/css/main.2eee6673.css",
-    "main.js": "/Sodic-react-app/static/js/main.89833d2f.js",
+    "main.css": "/Sodic-react-app/static/css/main.ce26ee28.css",
+    "main.js": "/Sodic-react-app/static/js/main.dcc34739.js",
     "static/js/453.7595bc37.chunk.js": "/Sodic-react-app/static/js/453.7595bc37.chunk.js",
+    "static/media/Ogami - Brochure.pdf-image-088.png": "/Sodic-react-app/static/media/Ogami - Brochure.pdf-image-088.edbb7682e77a6843c583.png",
     "static/media/img71.jpg": "/Sodic-react-app/static/media/img71.1466e361135738c5efe8.jpg",
     "static/media/img158.jpg": "/Sodic-react-app/static/media/img158.0f9543b2566d7e93113a.jpg",
-    "static/media/img135.jpg": "/Sodic-react-app/static/media/img135.ca2efe4eabacf4c873c0.jpg",
-    "static/media/img119.jpg": "/Sodic-react-app/static/media/img119.91a6682ba1c24e783d99.jpg",
+    "static/media/VYE SOL Homes Brochure.pdf-image-086.jpg": "/Sodic-react-app/static/media/VYE SOL Homes Brochure.pdf-image-086.9b5ae4b244ca6cde8f62.jpg",
+    "static/media/Ogami - Brochure.pdf-image-091.jpg": "/Sodic-react-app/static/media/Ogami - Brochure.pdf-image-091.095f91dc68a6d7583e22.jpg",
+    "static/media/Ogami - Brochure.pdf-image-100.jpg": "/Sodic-react-app/static/media/Ogami - Brochure.pdf-image-100.5f02b19258dcc4c95459.jpg",
+    "static/media/Ogami - Brochure.pdf-image-102.jpg": "/Sodic-react-app/static/media/Ogami - Brochure.pdf-image-102.ff539c493ee71aca0b9d.jpg",
+    "static/media/Ogami - Brochure.pdf-image-127.png": "/Sodic-react-app/static/media/Ogami - Brochure.pdf-image-127.e908e633f827f759bd06.png",
     "static/media/fa-solid-900.ttf": "/Sodic-react-app/static/media/fa-solid-900.2582b0e4bcf85eceead0.ttf",
-    "static/media/img137.jpg": "/Sodic-react-app/static/media/img137.7d5dd4d0288f865db8ac.jpg",
-    "static/media/img112.jpg": "/Sodic-react-app/static/media/img112.a75c82f02adccb5534b2.jpg",
+    "static/media/Ogami - Brochure.pdf-image-030.jpg": "/Sodic-react-app/static/media/Ogami - Brochure.pdf-image-030.39a2d54a2b3affa2b43e.jpg",
+    "static/media/Ogami - Brochure.pdf-image-083.jpg": "/Sodic-react-app/static/media/Ogami - Brochure.pdf-image-083.7a7bfb93e1b8ff6bb23a.jpg",
+    "static/media/Ogami - Brochure.pdf-image-111.jpg": "/Sodic-react-app/static/media/Ogami - Brochure.pdf-image-111.6485da014f4055a8b664.jpg",
+    "static/media/Ogami - Brochure.pdf-image-116.jpg": "/Sodic-react-app/static/media/Ogami - Brochure.pdf-image-116.a2a27d6967f9d64edbcb.jpg",
+    "static/media/Ogami - Brochure.pdf-image-129.png": "/Sodic-react-app/static/media/Ogami - Brochure.pdf-image-129.2c462018c737c85fc11d.png",
     "static/media/fa-brands-400.ttf": "/Sodic-react-app/static/media/fa-brands-400.1815e00441357e01619e.ttf",
     "static/media/fa-solid-900.woff2": "/Sodic-react-app/static/media/fa-solid-900.2463b90d9a316e4e5294.woff2",
     "static/media/fa-brands-400.woff2": "/Sodic-react-app/static/media/fa-brands-400.c210719e60948b211a12.woff2",
@@ -25,12 +32,12 @@
     "static/media/slick.ttf": "/Sodic-react-app/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/Sodic-react-app/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Sodic-react-app/index.html",
-    "main.2eee6673.css.map": "/Sodic-react-app/static/css/main.2eee6673.css.map",
-    "main.89833d2f.js.map": "/Sodic-react-app/static/js/main.89833d2f.js.map",
+    "main.ce26ee28.css.map": "/Sodic-react-app/static/css/main.ce26ee28.css.map",
+    "main.dcc34739.js.map": "/Sodic-react-app/static/js/main.dcc34739.js.map",
     "453.7595bc37.chunk.js.map": "/Sodic-react-app/static/js/453.7595bc37.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2eee6673.css",
-    "static/js/main.89833d2f.js"
+    "static/css/main.ce26ee28.css",
+    "static/js/main.dcc34739.js"
   ]
 }
