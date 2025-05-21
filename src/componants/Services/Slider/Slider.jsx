@@ -2,28 +2,50 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
-function FocusOnSelect({images}) {
+// Add your styles here (see below)
+import "./Slider.css";
+function FocusOnSelect({ images }) {
   const settings = {
     focusOnSelect: true,
     infinite: true,
-    slidesToShow: 2,
+    slidesToShow: 1,
     slidesToScroll: 1,
-    speed: 500,
+    speed: 600,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
+    lazyLoad: "ondemand",
+    dots: true,
+    arrows: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
-  return (
-    <div className="slider-container mt-5 m-5">
-      <div>Click on any slide to select and make it current slide</div>
-      <Slider {...settings}>
-             {images.map((image) => (
-                <div>
-                    <img className="w-100" style={{height:"300px"}} src={image} />       
-                </div>
-            ))}
 
-                
+  return (
+    <div className="slider-wrapper py-10 px-4 max-w-6xl mx-auto">
+      <Slider {...settings}>
+        {images.map((img, idx) => (
+          <div key={idx} className="image-slide">
+            <img src={img} alt={`unit-${idx}`} className="slider-image" />
+          </div>
+        ))}
       </Slider>
     </div>
   );

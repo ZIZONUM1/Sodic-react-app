@@ -61,7 +61,7 @@ export default function Services() {
                 </div>
                 <figcaption>
                   <h2 className="position-absolute top-0 start-0 p-3 text-white">
-                    {unit.description}
+                    {unit.name}
                   </h2>
                     <Link to={`/units/${unit.id}`}>
            <p className="position-absolute bottom-0 start-0 p-3 text-white figP">
@@ -70,7 +70,7 @@ export default function Services() {
           </Link>
                 </figcaption>
               </figure>
-              <img className='w-25' src={require('../../img(sodic)/img107.jpg')} alt="" />
+              <img className='w-25' src={`${unit.des_Img}`} alt="" />
             </div>
           </motion.div>)}
 
