@@ -33,7 +33,7 @@ function App() {
         { path: "contactus", element: <Contactus /> },
         { path: "aboutus", element: <Aboutus /> },
         { path: "loadingscreen", element: <Loadingscreen /> },
-        { path: "itemdetails", element: <ItemDetails /> },
+        { path: "units/:id", element: <ItemDetails /> },
         { path: "*", element: <Notfound /> },
       ],
     },
