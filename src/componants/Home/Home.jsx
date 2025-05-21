@@ -3,10 +3,13 @@ import { motion } from 'framer-motion';
 import HomeCSS from './Home.module.css';
 import { Link } from 'react-router-dom';
 import Services from '../Services/Services';
+import ContactIcon from '../ContactIcon/ContactIcon';
+import FloatingIcons from '../ContactIcon/ContactIcon';
 
 export default function Home() {
   return (
     <>
+    <FloatingIcons/>
       <header>
         <motion.div
           className={HomeCSS.HeaderSec}

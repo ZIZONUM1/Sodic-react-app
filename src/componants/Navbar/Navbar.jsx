@@ -18,6 +18,7 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  
   const handleLinkClick = () => {
     if (collapseRef.current) {
       const bsCollapse = Collapse.getOrCreateInstance(collapseRef.current);
