@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Sodic-react-app/static/css/main.2eee6673.css",
-    "main.js": "/Sodic-react-app/static/js/main.e8b0d21c.js",
+    "main.js": "/Sodic-react-app/static/js/main.89833d2f.js",
     "static/js/453.7595bc37.chunk.js": "/Sodic-react-app/static/js/453.7595bc37.chunk.js",
     "static/media/img71.jpg": "/Sodic-react-app/static/media/img71.1466e361135738c5efe8.jpg",
     "static/media/img158.jpg": "/Sodic-react-app/static/media/img158.0f9543b2566d7e93113a.jpg",
@@ -26,11 +26,11 @@
     "static/media/slick.woff": "/Sodic-react-app/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Sodic-react-app/index.html",
     "main.2eee6673.css.map": "/Sodic-react-app/static/css/main.2eee6673.css.map",
-    "main.e8b0d21c.js.map": "/Sodic-react-app/static/js/main.e8b0d21c.js.map",
+    "main.89833d2f.js.map": "/Sodic-react-app/static/js/main.89833d2f.js.map",
     "453.7595bc37.chunk.js.map": "/Sodic-react-app/static/js/453.7595bc37.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2eee6673.css",
-    "static/js/main.e8b0d21c.js"
+    "static/js/main.89833d2f.js"
   ]
 }
