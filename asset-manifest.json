@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Sodic-react-app/static/css/main.ce26ee28.css",
-    "main.js": "/Sodic-react-app/static/js/main.aceeeb8d.js",
+    "main.css": "/Sodic-react-app/static/css/main.004ac24b.css",
+    "main.js": "/Sodic-react-app/static/js/main.11efda13.js",
     "static/js/453.7595bc37.chunk.js": "/Sodic-react-app/static/js/453.7595bc37.chunk.js",
     "static/media/Ogami - Brochure.pdf-image-088.png": "/Sodic-react-app/static/media/Ogami - Brochure.pdf-image-088.edbb7682e77a6843c583.png",
     "static/media/img71.jpg": "/Sodic-react-app/static/media/img71.1466e361135738c5efe8.jpg",
@@ -32,12 +32,12 @@
     "static/media/slick.ttf": "/Sodic-react-app/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/Sodic-react-app/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Sodic-react-app/index.html",
-    "main.ce26ee28.css.map": "/Sodic-react-app/static/css/main.ce26ee28.css.map",
-    "main.aceeeb8d.js.map": "/Sodic-react-app/static/js/main.aceeeb8d.js.map",
+    "main.004ac24b.css.map": "/Sodic-react-app/static/css/main.004ac24b.css.map",
+    "main.11efda13.js.map": "/Sodic-react-app/static/js/main.11efda13.js.map",
     "453.7595bc37.chunk.js.map": "/Sodic-react-app/static/js/453.7595bc37.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ce26ee28.css",
-    "static/js/main.aceeeb8d.js"
+    "static/css/main.004ac24b.css",
+    "static/js/main.11efda13.js"
   ]
 }
