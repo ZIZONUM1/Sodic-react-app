@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import FocusOnSelect from "../Services/Slider/Slider";
 import { data } from "../../data";
+import Slider from "../Services/Slider/Slider";
 
 export default function ItemDetails() {
   const { id } = useParams();
@@ -16,7 +17,7 @@ export default function ItemDetails() {
   return (
     <div className="container my-5" dir="rtl">
       {/* سلايدر الصور */}
-      <FocusOnSelect images={unit.images} />
+      <Slider images={unit.images} />
 
       {/* وصف الكمباوند */}
       <div className="bg-white p-4 rounded shadow-sm my-4 text-start ">
