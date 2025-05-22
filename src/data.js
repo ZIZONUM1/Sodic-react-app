@@ -36,7 +36,13 @@ export const data = [
           ,
           "images": [
                require("./assets/VYE/VYE SOL Homes Brochure.pdf-image-086.jpg"),
-               require("./assets/VYE/VYE SOL Homes Brochure.pdf-image-086.jpg"),
+               require("./assets/VYE/VYE SOL Homes Brochure.pdf-image-003.jpg"),
+               require("./assets/VYE/VYE SOL Homes Brochure.pdf-image-040.jpg"),
+               require("./assets/VYE/VYE SOL Homes Brochure.pdf-image-043.jpg"),
+               require("./assets/VYE/VYE SOL Homes Brochure.pdf-image-048.jpg"),
+               require("./assets/VYE/VYE SOL Homes Brochure.pdf-image-048.jpg"),
+               require("./assets/VYE/VYE SOL Homes Brochure.pdf-image-063.jpg"),
+               require("./assets/VYE/VYE SOL Homes Brochure.pdf-image-085.jpg"),
                require("./assets/VYE/VYE SOL Homes Brochure.pdf-image-086.jpg")
           ]
      }
