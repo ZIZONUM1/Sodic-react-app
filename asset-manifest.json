@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Sodic-react-app/static/css/main.004ac24b.css",
-    "main.js": "/Sodic-react-app/static/js/main.11efda13.js",
-    "static/js/453.7595bc37.chunk.js": "/Sodic-react-app/static/js/453.7595bc37.chunk.js",
+    "main.css": "/Sodic-react-app/static/css/main.c47e129c.css",
+    "main.js": "/Sodic-react-app/static/js/main.a9ffb241.js",
+    "static/js/453.2435f232.chunk.js": "/Sodic-react-app/static/js/453.2435f232.chunk.js",
     "static/media/Ogami - Brochure.pdf-image-088.png": "/Sodic-react-app/static/media/Ogami - Brochure.pdf-image-088.edbb7682e77a6843c583.png",
     "static/media/img71.jpg": "/Sodic-react-app/static/media/img71.1466e361135738c5efe8.jpg",
     "static/media/img158.jpg": "/Sodic-react-app/static/media/img158.0f9543b2566d7e93113a.jpg",
@@ -27,17 +27,13 @@
     "static/media/fa-regular-400.woff2": "/Sodic-react-app/static/media/fa-regular-400.89999bdf5d835c012025.woff2",
     "static/media/fa-v4compatibility.ttf": "/Sodic-react-app/static/media/fa-v4compatibility.da94ef451f4969af06e6.ttf",
     "static/media/fa-v4compatibility.woff2": "/Sodic-react-app/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
-    "static/media/slick.svg": "/Sodic-react-app/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/Sodic-react-app/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/Sodic-react-app/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/Sodic-react-app/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Sodic-react-app/index.html",
-    "main.004ac24b.css.map": "/Sodic-react-app/static/css/main.004ac24b.css.map",
-    "main.11efda13.js.map": "/Sodic-react-app/static/js/main.11efda13.js.map",
-    "453.7595bc37.chunk.js.map": "/Sodic-react-app/static/js/453.7595bc37.chunk.js.map"
+    "main.c47e129c.css.map": "/Sodic-react-app/static/css/main.c47e129c.css.map",
+    "main.a9ffb241.js.map": "/Sodic-react-app/static/js/main.a9ffb241.js.map",
+    "453.2435f232.chunk.js.map": "/Sodic-react-app/static/js/453.2435f232.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.004ac24b.css",
-    "static/js/main.11efda13.js"
+    "static/css/main.c47e129c.css",
+    "static/js/main.a9ffb241.js"
   ]
 }
