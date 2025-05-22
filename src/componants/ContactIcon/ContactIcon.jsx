@@ -3,11 +3,12 @@ import { FaWhatsapp, FaPhone } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const FloatingIcons = () => {
-  const phoneNumber = "01016535608";  
+  const phoneNumber = "01229491531";  
 
   return (
     <div
       style={{
+        
         position: "fixed",
         bottom: "20px",
         right: "20px",
