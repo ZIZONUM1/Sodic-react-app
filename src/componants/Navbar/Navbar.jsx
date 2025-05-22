@@ -18,11 +18,17 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  
   const handleLinkClick = () => {
     if (collapseRef.current) {
       const bsCollapse = Collapse.getOrCreateInstance(collapseRef.current);
-      bsCollapse.hide(); // إغلاق القائمة بعد الضغط على رابط
+      bsCollapse.hide(); // Close navbar on link click
+    }
+  };
+
+  const handleToggleClick = () => {
+    if (collapseRef.current) {
+      const bsCollapse = Collapse.getOrCreateInstance(collapseRef.current);
+      bsCollapse.toggle(); // Toggle navbar manually
     }
   };
 
@@ -75,8 +81,7 @@ export default function Navbar() {
           <button
             className="navbar-toggler"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
+            onClick={handleToggleClick}
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"

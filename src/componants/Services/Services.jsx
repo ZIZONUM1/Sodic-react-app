@@ -49,7 +49,8 @@ export default function Services() {
 
               <figure className="position-relative">
                 <img
-                  className="w-100" 
+                  className="w-100 "
+                  style={{ height: '550px' }} 
                   src={unit.cover_photo}
                   alt="service1"
                 />
@@ -70,7 +71,7 @@ export default function Services() {
           </Link>
                 </figcaption>
               </figure>
-              <img className='w-25' src={`${unit.des_Img}`} alt="" />
+          
             </div>
           </motion.div>)}
 

@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import './mediaQ.css'
+import { Link } from 'react-router-dom';
 export default function Footer() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: false, margin: '0px 0px -100px 0px' });
@@ -11,7 +12,7 @@ export default function Footer() {
   };
 
   return (
-    <div className="container-fluid footer bg-dark mt-5 py-5">
+    <div className="container-fluid footer bg-dark  py-5">
       <div className="row d-flex justify-content-center align-items-center">
         <motion.div
           className="col-md-3 text-center"
@@ -34,11 +35,9 @@ export default function Footer() {
           </div>
           <div className="icons text-white">
             <h6>Follow Us:</h6>
-            <i className="fa-brands fa-facebook me-2"></i>
-            <i className="fa-brands fa-twitter me-2"></i>
-            <i className="fa-brands fa-youtube me-2"></i>
-            <i className="fa-brands fa-linkedin me-2"></i>
-            <i className="fa-brands fa-instagram"></i>
+            <Link className='me-3 text-white' to='https://www.tiktok.com/@coldwellbankerrangers?_t=ZS-8wXhSrXc70r&_r=1'><i className="fa-brands fa-tiktok"></i></Link>
+            <Link className='me-3 text-white' to='https://www.facebook.com/share/1DA1BxSGJz/'><i className="fa-brands fa-facebook"></i></Link>
+            <Link className='text-white' to='https://www.instagram.com/coldwellbankerrangers?igsh=MTB2bXVtc2JrMjdxZQ=='><i className="fa-brands fa-instagram"></i></Link>
           </div>
         </motion.div>
       </div>
